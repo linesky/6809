@@ -2,7 +2,8 @@
 
 start:
     lda #10
-    cmpa #5
+    cmpa #10
+    
 
 hlt:
 jmp hlt
