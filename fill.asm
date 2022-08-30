@@ -3,19 +3,19 @@
 start:
 
 fill:
-    lda fillb
-    adda fillc
-    bcc fill5
-    sta fillc
-    lda fillc+1
-    adda #1
-    sta fillc+1
-    lda fillb
-fill5:
-    sta fillc
     lda fillb+1
     adda fillc+1
+    bcc fill5
     sta fillc+1
+    lda fillc
+    adda #1
+    sta fillc
+    lda fillb+1
+fill5:
+    sta fillc+1
+    lda fillb
+    adda fillc
+    sta fillc
 
     ldx fillb
     lda filla
