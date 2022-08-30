@@ -3,7 +3,7 @@
 start:
     ldb #1
     ldx #0
-    lda #3
+    lda #$ff
 for:
      sta $600,x
     abx 
